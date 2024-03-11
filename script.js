@@ -6,7 +6,7 @@ function volume_sphere(event) {
 	if (isNaN(value) || value<0) {
 		ans.value = NaN;
 	}
-	const v = (4/3)*3.14159*value*value*value;
+	const v = (4/3)*Math.PI*Math.pow(value, 3);
 	ans.value = v.toFixed(4);
 } 
 
